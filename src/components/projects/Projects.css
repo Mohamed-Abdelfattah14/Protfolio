@@ -1,0 +1,13 @@
+.main-projects{
+    background-color: #000000;
+    color: white;
+}
+.main-projects .head-projects{
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 0 0 40px #E6E6E6;
+}
+.main-projects .img{
+    width: 100%;
+}

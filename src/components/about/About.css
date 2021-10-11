@@ -1,0 +1,83 @@
+.main-about{
+    background: #212121;
+    color: white;
+}
+.main-about .head-about{
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 0 0 40px #E6E6E6;
+}
+.main-about .img-about .img{
+    height: 70%;
+    width: 90%;
+    border-radius: 8px;
+}
+.main-about .about-h3{
+    font-weight: bold;
+    -webkit-text-stroke: .1vw #E6E6E6;
+    color: #212121;
+    font-size: 2rem;
+}
+.main-about .about-info .about-p{
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+.main-about .about-social{
+    font-size: 1rem;
+    /* letter-spacing: .5px; */
+}
+.main-about .about-social span{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.main-about .about-social div{
+    margin-bottom: 6px;
+}
+.main-about .about-social .face{
+    font-size: 1.2rem;
+}
+.main-about .about-social .face:hover{
+    color: #4267B2;
+    transition: 1s ease-in-out;
+}
+.main-about .about-social .whats{
+    font-size: 1.2rem;
+}
+.main-about .about-social .whats:hover{
+    color: #128C7E;
+    transition: 1s ease-in-out;
+}
+.main-about .about-social .twitter{
+    font-size: 1.2rem;
+}
+.main-about .about-social .twitter:hover{
+    color: #1DA1F2;
+    transition: 1s ease-in-out;
+}
+.main-about .about-social .linkedin{
+    font-size: 1.2rem;
+}
+.main-about .about-social .linkedin:hover{
+    color: #2867B2;
+    transition: 1s ease-in-out;
+}
+.main-about .about-social .yahoo{
+    font-size: 1.2rem;
+}
+.main-about .about-social .yahoo:hover{
+    color: #4A00A0;
+    transition: 1s ease-in-out;
+}
+.main-about .about-social .git{
+    font-size: 1.2rem;
+}
+.main-about .cv .btn{
+    border: 2px solid white;
+    color: white !important;
+}
+.main-about .cv .btn:hover{
+    box-shadow: 0 0 40px #E6E6E6;
+}

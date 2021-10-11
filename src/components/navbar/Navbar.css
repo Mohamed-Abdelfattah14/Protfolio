@@ -1,0 +1,140 @@
+.main-nav {
+    
+    background-color: #000000;
+    height: 80px;
+    /* margin-top: -80px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.main-nav nav {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    padding: 0 24px;
+    /* max-width: 1100px; */
+}
+
+
+.main-nav .logo {
+    /* background-color: #212121;
+    margin-top:auto;
+    margin-bottom: auto;
+    height: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    justify-self: flex-start;
+    font-size: 1.5rem;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none; */
+
+    margin-top:auto;
+    margin-bottom: auto;
+    height: 80%;
+    border: 10px solid transparent;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-size: 1em; */
+    /* letter-spacing: 1em; */
+    padding: 1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.demo {
+    
+    background-image:
+      linear-gradient(white, white),
+      linear-gradient(270deg, #3D56B2, #E6E6E6 50%, #5C7AEA 100%);
+
+    background-repeat: no-repeat;
+    background-origin: padding-box, border-box;
+    text-align: center;
+  }
+
+  .animated {
+    background-image:
+      linear-gradient(#212121, #212121),
+      linear-gradient(180deg, #3D56B2, #E6E6E6 50%, #5C7AEA);
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%, 100% 200%;
+    background-position: 0 0, 0 100%;
+    background-origin: padding-box, border-box;
+    animation: highlight 1s infinite alternate;
+  }
+
+  @keyframes highlight {
+    100% {
+      background-position: 0 0, 0 0;
+    }
+  }
+
+  
+
+.main-nav .icon {
+    display: none;
+}
+
+.main-nav .nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    padding-top: 15px;
+}
+
+/* .main-nav .nav-menu .navItem {
+    height: 80px;
+} */
+
+.main-nav .nav-menu .link {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 1rem;
+    cursor: pointer;
+    height: 100%;
+    font-weight: bold;
+}
+
+.main-nav .nav-menu .link.active ,.main-nav .nav-menu .link.active:focus{
+    border-top: 3px solid #E6E6E6;
+    border-bottom: 3px solid #E6E6E6;
+}
+
+
+/* start edia Query */
+
+@media screen and (max-width: 768px) {
+    .main-nav {
+        transition: 0.8s all ease;
+    }
+    .main-nav .icon {
+        display: block;
+        position: relative;
+        top: 10px;
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: white;
+    }
+    .main-nav .nav-menu {
+        display: none;
+    }
+}

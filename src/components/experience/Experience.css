@@ -1,0 +1,57 @@
+.main-ex{
+    background-color: #212121;
+    color: white;
+}
+.main-ex .head-ex{
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 0 0 40px #E6E6E6;
+}
+.main-ex .nav-tabs{
+    border-bottom: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.main-ex .nav-link{
+    color: white !important;
+}
+.nav-tabs .nav-link.active{
+    background-color: #212121 !important;
+    color: white !important;
+    box-shadow: 0 0 40px white;
+    margin-right: 10px;
+    font-weight: bold;
+}
+.main-ex .card{
+    background-color: #000000;
+    padding: 20px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0px 0px 20px white;
+}
+.main-ex .card .icon{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+.main-ex .card .ed-h5 ,.ed-h6{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.main-ex .line{
+    height: 100px;
+    width: 5px;
+    margin: auto;
+    background-color: #E6E6E6;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.main-ex .line .star{
+    width: 20px;
+    height: 20px;
+    background-color: darkcyan;
+    transform: rotate(45deg);
+}

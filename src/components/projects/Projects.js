@@ -4,10 +4,21 @@ import imge from "../../imges/1.jpg";
 // import igm2 from  "../../imges/2.jpg";
 
 const pros = [
-  { name: "food court", tech: "react", img: "/static/media/1.b530fc3b.jpg" },
-  { name: "weather app", tech: "angular", img: "../../imges/2.jpg" },
-  { name: "hand watch", tech: "UI", img: "../../imges/3.jpg" },
-  { name: "company", tech: "js", img: "../../imges/4.jpg" },
+  {
+    name: "food court",
+    tech: "react",
+    img: "../../imges/food.jpg",
+  },
+  { name: "Movie app", tech: "react", img: "../../imges/movie.jpg" },
+  { name: "Protfolio", tech: "react", img: "../../imges/head.jpg" },
+  { name: "Courses", tech: "angular", img: "../../imges/courses.png" },
+  { name: "Crud", tech: "angular", img: "../../imges/curd.png" },
+  { name: "Weather app", tech: "angular", img: "weather.jpg" },
+  { name: "Hand watch", tech: "UI", img: "../../imges/watch.jpg" },
+  { name: "Gym", tech: "UI", img: "../../imges/gym.jpg" },
+  { name: "Study", tech: "UI", img: "../../imges/study.png" },
+  { name: "Company", tech: "js", img: "../../imges/company.jpg" },
+  { name: "Team", tech: "js", img: "../../imges/team.jpg" },
 ];
 
 const ang = pros.filter((pro) => pro.tech == "angular");
@@ -106,7 +117,7 @@ const Projects = () => {
               <div className="row">
                 {pros.map((e) => {
                   return (
-                    <div className="col-12 col-md-6 col-lg-3">{e.img}</div>
+                    <div className="col-12 col-md-6 col-lg-4">{e.img}</div>
                   );
                 })}
               </div>

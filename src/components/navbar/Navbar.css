@@ -9,7 +9,7 @@
     font-size: 1rem;
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 999;
 }
 
 .main-nav nav {
@@ -60,7 +60,7 @@
     
     background-image:
       linear-gradient(white, white),
-      linear-gradient(270deg, #3D56B2, #E6E6E6 50%, #5C7AEA 100%);
+      linear-gradient(270deg, #008b8b, #fff 50%, #00A19D 100%);
 
     background-repeat: no-repeat;
     background-origin: padding-box, border-box;
@@ -70,7 +70,7 @@
   .animated {
     background-image:
       linear-gradient(#212121, #212121),
-      linear-gradient(180deg, #3D56B2, #E6E6E6 50%, #5C7AEA);
+      linear-gradient(180deg, #008b8b, #fff 50%, #00A19D);
 
     background-repeat: no-repeat;
     background-size: 100% 100%, 100% 200%;
@@ -108,16 +108,100 @@
     display: flex;
     align-items: center;
     text-decoration: none;
-    padding: 1rem;
+    padding: .5rem;
+    margin: .5rem;
     cursor: pointer;
     height: 100%;
     font-weight: bold;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+.main-nav .nav-menu .link:before{
+    content: '';
+    position: absolute;
+    top: -2;
+    left: -2;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 4px solid transparent;
+}
+.main-nav .nav-menu .link:hover:before{
+    animation: animate 1s linear forwards;
+}
+@keyframes animate{
+    0%{
+        width: 0;
+        height: 0;
+        border-top-color: #008b8b;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50%{
+        width: 100%;
+        height: 0;
+        border-top-color: #008b8b;
+        border-right-color: #008b8b;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        border-top-color: #008b8b;
+        border-right-color: #008b8b;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
 }
 
-.main-nav .nav-menu .link.active ,.main-nav .nav-menu .link.active:focus{
+
+.main-nav .nav-menu .link:after{
+    content: '';
+    position: absolute;
+    top: -2;
+    left: -2;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 4px solid transparent;
+}
+.main-nav .nav-menu .link:hover:after{
+    animation: animate2 1s linear forwards;
+}
+@keyframes animate2{
+    0%{
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #008b8b;
+    }
+    50%{
+        width: 0;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #008b8b;
+        border-left-color: #008b8b;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #008b8b;
+        border-left-color: #008b8b;
+    }
+}
+
+/* .main-nav .nav-menu .link.active ,.main-nav .nav-menu .link.active:focus{
     border-top: 3px solid #E6E6E6;
     border-bottom: 3px solid #E6E6E6;
-}
+} */
 
 
 /* start edia Query */

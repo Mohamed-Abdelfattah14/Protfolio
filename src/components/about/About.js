@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+import cv from "../../cv.pdf";
 import {
   FaFacebookSquare,
   FaTwitterSquare,
@@ -64,7 +65,9 @@ const About = () => {
             </div>
           </div>
           <div className="text-center pb-5 cv">
-            <button className="btn">Download CV</button>
+            <a className="btn" href={cv} download="Muhammed Abdelfattah.pdf">
+              Download CV
+            </a>
           </div>
         </div>
       </div>

@@ -10,18 +10,13 @@ import {
 import { BsLinkedin } from "react-icons/bs";
 import { ImYahoo2 } from "react-icons/im";
 import Skills from "../skills/Skills";
-// const FileServer = require('file-server');
 const About = () => {
-  // const saveFile = () =>{
-  //     FileServer.saveAs(
-  //         process.env.REACT_APP_CLIENT_URL + "../../cv.pdf"
-  //     )
-  // }
+ 
   return (
     <>
       <div className="main-about">
         <div className="container">
-          <h1 className="text-center head-about pt-5">About Us</h1>
+          <h1 className="text-center head-about pt-5">About Me</h1>
           <div className="row mt-5 pb-5">
             <h3 className="about-h3">I am Mohamed Abd Elfattah</h3>
             <div className="col-12 col-lg-6">

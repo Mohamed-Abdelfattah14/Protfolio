@@ -81,3 +81,9 @@
 .main-about .cv .btn:hover{
     box-shadow: 0 0 40px #E6E6E6;
 }
+
+@media screen and (max-width: 320px) {
+    .main-about .head-about{
+        font-size: 2.5rem;
+    }
+}

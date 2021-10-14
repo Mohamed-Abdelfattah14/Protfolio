@@ -1,0 +1,59 @@
+.main-contact{
+    background: #212121;
+    color: white;
+}
+.main-contact .head-contact{
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-shadow: 0 0 40px #E6E6E6;
+    padding-bottom: 20px;
+}
+.main-contact .form-control{
+    margin-top: 20px;
+    background-color: #000000;
+    color: white !important;
+    border: none;
+    border-bottom: 1px solid darkcyan;
+}
+.main-contact .form-control:focus{
+    background-color: #000000;
+    outline: none;
+}
+.main-contact .btn{
+    margin: auto;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: darkcyan;
+    font-size: 1rem;
+    font-weight: bold;
+    /* border-radius: 0%; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid darkcyan;
+    /* margin-bottom: 20px; */
+}
+.btn .icon-send{
+    margin: 5px;
+}
+.main-contact .btn:hover{
+    color: darkcyan;
+}
+.main-contact .footer{
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.main-contact .footer p{
+padding: 10px 0 0 0;
+font-size: 1rem;
+}
+
+@media screen and (max-width: 320px) {
+    .main-contact .head-contact{
+        font-size: 2.5rem;
+    }
+}

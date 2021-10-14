@@ -60,6 +60,12 @@
     background-color: darkcyan;
     color: white;
     border: none !important;
-    border-radius: 0 !important;
+    /* border-radius: 0 !important; */
     padding: 8px 20px ;
+}
+
+@media screen and (max-width: 320px) {
+    .main-projects .head-projects{
+        font-size: 2.5rem;
+    }
 }

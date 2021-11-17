@@ -20,7 +20,7 @@ const About = () => {
           <div className="row mt-5 pb-5">
             <h3 className="about-h3">I am Mohamed Abd Elfattah</h3>
             <div className="col-12 col-lg-6">
-              <div className="about-info">
+              <div className="about-info" data-aos="fade-right">
                 <p className="about-p">
                   A Front-End developer seeking to learn new web technologies, I
                   always strive to be different, I have learned several JS
@@ -31,7 +31,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-12 col-lg-6">
-              <div className="about-social">
+              <div className="about-social" data-aos="fade-left">
                 <div>
                   <FaFacebookSquare className="face" />
                   <span>hamom311@yahoo.com</span>
@@ -59,7 +59,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="text-center pb-5 cv">
+          <div className="text-center pb-5 cv" data-aos="fade-up">
             <a className="btn" href={cv} download="Muhammed Abdelfattah.pdf">
               Download CV
             </a>

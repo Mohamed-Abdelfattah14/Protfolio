@@ -1,5 +1,6 @@
 .main-skills{
     background: #000000;
+    overflow: hidden;
 }
 .main-skills .head-skills{
     color: white;
@@ -8,12 +9,13 @@
     font-weight: bold;
     text-shadow: 0 0 40px #E6E6E6;
 }
-.main-skills .skill-card .skill1 , .skill2 , .skill4 , .skill5 , .skill7{
+.main-skills .skill-card .skill{
     border: 1px solid white;
     border-radius: 8px;
     background-color: #212121;
     padding: 10px;
     margin-top: 20px;
+    overflow: hidden;
 }
 .main-skills .skill-card h6{
     font-size: 2rem;
@@ -21,33 +23,33 @@
     font-weight: bold;
 }
 .main-skills .skill-card .prc{
-    height: 1px;
+    height: 2px;
     width: 95%;
     background-color: white;
 }
-.main-skills .skill-card .prc1{
+.main-skills .skill-card .prc1 , .prc3{
     width: 95%;
-    height: 1px;
+    height: 2px;
     background-color: rgb(82, 79, 79);
 }
 .main-skills .skill-card .prc2{
     width: 90%;
-    height: 1px;
+    height: 2px;
     background-color: rgb(82, 79, 79);
 }
 .main-skills .skill-card .prc4{
     width: 70%;
-    height: 1px;
+    height: 2px;
     background-color: rgb(82, 79, 79);
 }
-.main-skills .skill-card .prc5{
+.main-skills .skill-card .prc5 , .prc6 , .prc8 , .prc9{
     width: 80%;
-    height: 1px;
+    height: 2px;
     background-color: rgb(82, 79, 79);
 }
 .main-skills .skill-card .prc7{
     width: 85%;
-    height: 1px;
+    height: 2px;
     background-color: rgb(82, 79, 79);
 }
 .main-skills .skill-card p{

@@ -60,7 +60,7 @@ const Experience = () => {
                     aria-labelledby="nav-home-tab"
                   >
                     <div className="row">
-                      <div className="col-12">
+                      <div className="col-12" data-aos="fade-up">
                         <div className="card">
                           <span>
                             <FaUniversity className="icon" />
@@ -88,7 +88,7 @@ const Experience = () => {
                     </div>
                     <div className="row">
                       <div className="col-12">
-                        <div className="card">
+                        <div className="card" data-aos="fade-up">
                           <span>
                             <FaUniversity className="icon" />
                           </span>

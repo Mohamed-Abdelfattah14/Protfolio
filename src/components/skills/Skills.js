@@ -9,100 +9,90 @@ const Skills = () => {
           <div className="row">
 
             <div className="col-12 col-md-6 col-lg-4">
-              <div className="skill1">
+              <div className="skill">
                 <h6 className="text-center pt-3">HTML</h6>
                 <div className="prc text-center">
-                  <div className="prc1 text-center"></div>
+                  <div className="prc1 text-center" data-aos="fade-right"></div>
                 </div>
                 <p className="text-center">95%</p>
               </div>
             </div>
 
             <div className="col-12 col-md-6 col-lg-4">
-              <div className="skill2">
+              <div className="skill">
                 <h6 className="text-center pt-3">CSS</h6>
                 <div className="prc text-center">
-                  <div className="prc2 text-center"></div>
+                  <div className="prc2 text-center" data-aos="fade-right" data-aos-delay="100"></div>
                 </div>
                 <p className="text-center">90%</p>
               </div>
             </div>
 
             <div className="col-12 col-md-6 col-lg-4">
-              <div className="skill1">
+              <div className="skill">
                 <h6 className="text-center pt-3">Bootstrap</h6>
                 <div className="prc text-center">
-                  <div className="prc1 text-center"></div>
+                  <div className="prc3 text-center" data-aos="fade-right" data-aos-delay="200"></div>
                 </div>
                 <p className="text-center">95%</p>
               </div>
             </div>
 
             <div className="col-12 col-md-6 col-lg-4">
-              <div className="skill4">
+              <div className="skill">
                 <h6 className="text-center pt-3">Sass</h6>
                 <div className="prc text-center">
-                  <div className="prc4 text-center"></div>
+                  <div className="prc4 text-center" data-aos="fade-right" data-aos-delay="300"></div>
                 </div>
                 <p className="text-center">70%</p>
               </div>
             </div>
 
             <div className="col-12 col-md-6 col-lg-4">
-              <div className="skill5">
+              <div className="skill">
                 <h6 className="text-center pt-3">JavaScript</h6>
                 <div className="prc text-center">
-                  <div className="prc5 text-center"></div>
+                  <div className="prc5 text-center" data-aos="fade-right" data-aos-delay="400"></div>
                 </div>
                 <p className="text-center">80%</p>
               </div>
             </div>
 
             <div className="col-12 col-md-6 col-lg-4">
-              <div className="skill5">
+              <div className="skill">
                 <h6 className="text-center pt-3">ES6</h6>
                 <div className="prc text-center">
-                  <div className="prc5 text-center"></div>
+                  <div className="prc6 text-center" data-aos="fade-right" data-aos-delay="500"></div>
                 </div>
                 <p className="text-center">80%</p>
               </div>
             </div>
 
             <div className="col-12 col-md-6 col-lg-4">
-              <div className="skill7">
+              <div className="skill">
                 <h6 className="text-center pt-3">Jquery</h6>
                 <div className="prc text-center">
-                  <div className="prc7 text-center"></div>
+                  <div className="prc7 text-center" data-aos="fade-right" data-aos-delay="600"></div>
                 </div>
                 <p className="text-center">85%</p>
               </div>
             </div>
 
             <div className="col-12 col-md-6 col-lg-4">
-              <div className="skill7">
-                <h6 className="text-center pt-3">ES6</h6>
-                <div className="prc text-center">
-                  <div className="prc7 text-center"></div>
-                </div>
-                <p className="text-center">85%</p>
-              </div>
-            </div>
-
-            <div className="col-12 col-md-6 col-lg-4">
-              <div className="skill5">
+              <div className="skill">
                 <h6 className="text-center pt-3">Angular</h6>
                 <div className="prc text-center">
-                  <div className="prc5 text-center"></div>
+                  <div className="prc8 text-center" data-aos="fade-right" data-aos-delay="700"></div>
                 </div>
                 <p className="text-center">80%</p>
               </div>
             </div>
 
             <div className="col-12 col-md-6 col-lg-4">
-              <div className="skill5">
+              <div className="skill">
                 <h6 className="text-center pt-3">React</h6>
                 <div className="prc text-center">
-                  <div className="prc5 text-center"></div>
+                  <div className="prc9 text-center" data-aos="fade-right" data-aos-delay="800"></div>
                 </div>
                 <p className="text-center">80%</p>
               </div>

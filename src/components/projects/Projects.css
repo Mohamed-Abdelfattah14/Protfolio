@@ -44,7 +44,7 @@
     background-color: rgba(0, 0, 0, 0.8) !important;
     opacity: 0;
     /* z-index: 99; */
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     top: -100%;
@@ -60,6 +60,7 @@
     background-color: darkcyan;
     color: white;
     border: none !important;
+    margin: auto;
     /* border-radius: 0 !important; */
     padding: 8px 20px ;
 }

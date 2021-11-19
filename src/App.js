@@ -23,14 +23,12 @@ function App() {
       setLoading(false);
     }, 5000);
 
-   
     // Aos.init();
   }, []);
   return (
     <>
       {loading ? (
         <div className="main-spiner">
-          
           <SpinnerInfinity
             secondaryColor="rgba(0, 0, 0, 0.44)"
             color={"#008b8b"}
@@ -39,7 +37,7 @@ function App() {
           />
         </div>
       ) : (
-        <Router>
+        <Router basename={window.location.pathname || ""}>
           <Navbar />
           <Switch>
             <Route path="/" exact>

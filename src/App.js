@@ -37,7 +37,7 @@ function App() {
           />
         </div>
       ) : (
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router basename={window.location.pathname || ""}>
           <Navbar />
           <Switch>
             <Route path="/" exact>

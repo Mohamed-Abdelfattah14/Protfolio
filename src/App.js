@@ -37,7 +37,7 @@ function App() {
           />
         </div>
       ) : (
-        <Router basename={window.location.pathname || ""}>
+        <Router >
           <Navbar />
           <Switch>
             <Route path="/" exact>

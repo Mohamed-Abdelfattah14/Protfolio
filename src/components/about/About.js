@@ -11,7 +11,6 @@ import { BsLinkedin } from "react-icons/bs";
 import { ImYahoo2 } from "react-icons/im";
 import Skills from "../skills/Skills";
 const About = () => {
- 
   return (
     <>
       <div className="main-about">

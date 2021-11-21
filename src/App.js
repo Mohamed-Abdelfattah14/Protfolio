@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/navbar/Navbar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, BrowserRouter, Route } from "react-router-dom";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
@@ -37,26 +37,26 @@ function App() {
           />
         </div>
       ) : (
-        <Router >
+        <BrowserRouter basename="/Protfolio/">
           <Navbar />
           <Switch>
-            <Route path="/Protfolio" exact>
+            <Route path="/" exact>
               <Home />
             </Route>
             <Route path="/about" exact>
               <About />
             </Route>
-            <Route path="/experience">
+            <Route path="/experience" exact>
               <Experience />
             </Route>
-            <Route path="/projects">
+            <Route path="/projects" exact>
               <Projects />
             </Route>
-            <Route path="/contact">
+            <Route path="/contact" exact>
               <Contact />
             </Route>
           </Switch>
-        </Router>
+        </BrowserRouter>
       )}
     </>
   );

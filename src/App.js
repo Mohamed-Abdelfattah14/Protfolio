@@ -37,7 +37,7 @@ function App() {
           />
         </div>
       ) : (
-        <HashRouter>
+        <HashRouter basename="">
           <Navbar />
           <Switch>
             <Route path="/" exact>

@@ -1,7 +1,7 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/navbar/Navbar";
-import { Switch, BrowserRouter, Route } from "react-router-dom";
+import { Switch, Route, HashRouter } from "react-router-dom";
 import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
@@ -37,7 +37,7 @@ function App() {
           />
         </div>
       ) : (
-        <BrowserRouter basename="/Protfolio/">
+        <HashRouter basename="/Protfolio/">
           <Navbar />
           <Switch>
             <Route path="/" exact>
@@ -56,7 +56,7 @@ function App() {
               <Contact />
             </Route>
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
       )}
     </>
   );

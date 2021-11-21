@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 import Navbar from "../navbar/Navbar";
 import "./Sidebar.css";
 
+
+
 const Sidebar = () => {
   const [toggle, setToggle] = useState(true);
 
@@ -16,8 +18,8 @@ const Sidebar = () => {
         </div>
         
           <ul className="side-menu">
-            <li className="side-item">
-              <NavLink to="/" className="link" >
+            <li className="side-item" onClick={()=> setToggle(false)}>
+              <NavLink to="/" className="link">
                 Home
               </NavLink>
               <NavLink to="about" className="link">
@@ -32,7 +34,7 @@ const Sidebar = () => {
               <NavLink to="contact" className="link">
                 Contacts
               </NavLink>
-            </li>
+            </li> 
           </ul>
         
       </div>

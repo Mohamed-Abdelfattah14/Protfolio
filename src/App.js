@@ -40,7 +40,7 @@ function App() {
         <Router >
           <Navbar />
           <Switch>
-            <Route path="/" exact>
+            <Route path="/Protfolio/" exact>
               <Home />
             </Route>
             <Route path="/about" exact>

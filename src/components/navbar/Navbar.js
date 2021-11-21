@@ -41,11 +41,6 @@ const Navbar = () => {
                   Projects
                 </NavLink>
               </li>
-              {/* <li className="navItem" data-aos="fade-down" data-aos-delay="500">
-                <NavLink to="/contact" className="link" exact>
-                  Contacts
-                </NavLink>
-              </li> */}
             </ul>
           </nav>
         </div>

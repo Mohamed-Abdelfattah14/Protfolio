@@ -6,7 +6,7 @@ import Home from "./components/home/Home";
 import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
 import Projects from "./components/projects/Projects";
-import Contact from "./components/contact/Contact";
+// import Contact from "./components/contact/Contact";
 // import Aos from "aos";
 // import 'aos/dist/aos.css'
 // import Loading from './components/loading/Loading';
@@ -52,9 +52,9 @@ function App() {
             <Route path="/projects" exact>
               <Projects />
             </Route>
-            <Route path="/contact" exact>
+            {/* <Route path="/contact" exact>
               <Contact />
-            </Route>
+            </Route> */}
           </Switch>
         </HashRouter>
       )}

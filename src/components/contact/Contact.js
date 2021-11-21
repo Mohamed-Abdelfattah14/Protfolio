@@ -66,7 +66,7 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="main-contact">
+      <div id="contact" className="main-contact">
         <div className="container">
           <h1 className="text-center head-contact pt-5">Contact Me</h1>
           <div className="contact-card">
@@ -113,12 +113,11 @@ const Contact = () => {
                     onChange={handlChange}
                   />
                   <p>{formError.textarea}</p>
-                  
                 </div>
               </div>
               <button className="btn mt-4 mb-4">
-                    <FiSend className="icon-send" /> send
-                  </button>
+                <FiSend className="icon-send" /> send
+              </button>
             </form>
           </div>
         </div>

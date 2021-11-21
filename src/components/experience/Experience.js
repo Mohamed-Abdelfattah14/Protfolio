@@ -106,8 +106,8 @@ const Experience = () => {
                             6 October University , Egypt
                           </span>
                           <span className="ed-h6 mb-3">
-                            I have graduated from faculty of Computer Science
-                            and Information System in 2019 with grad Good
+                            I have graduated from the faculty of Computer Science
+                            and Information System in 2019 with grade Good
                           </span>
                         </div>
                       </div>

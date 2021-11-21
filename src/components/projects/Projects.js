@@ -146,7 +146,7 @@ const Projects = () => {
                 aria-selected="false"
               >
                 JavaScript
-              </button>{" "}
+              </button>
               <button
                 className={toggle === 5 ? "nav-link active" : "nav-link"}
                 onClick={() => toggleTabs(5)}
@@ -164,6 +164,7 @@ const Projects = () => {
               </button>
             </div>
           </nav>
+
           <div className="tab-content" id="nav-tabContent">
             <div
               className={
@@ -181,10 +182,10 @@ const Projects = () => {
                       className="col-12 col-md-6 col-lg-4 img-contant"
                     >
                       <div className="view">
-                        <h3 className="text-center mt-5">{e.name}</h3>
-                        
+                        <h3 className="text-center mt-3">{e.name}</h3>
+
                         <h6 className="text-center mt-3">{e.tech}</h6>
-                        
+
                         <div className="text-center mt-3">
                           <a className="btn" href={e.href}>
                             View
@@ -213,9 +214,15 @@ const Projects = () => {
                       className="col-12 col-md-6 col-lg-4 img-contant"
                     >
                       <div className="view">
-                        <a className="btn" href={e.href}>
-                          View
-                        </a>
+                        <h3 className="text-center mt-3">{e.name}</h3>
+
+                        <h6 className="text-center mt-3">{e.tech}</h6>
+
+                        <div className="text-center mt-3">
+                          <a className="btn" href={e.href}>
+                            View
+                          </a>
+                        </div>
                       </div>
                       <img className="imge" src={e.img} alt={e.name} />
                     </div>
@@ -239,9 +246,15 @@ const Projects = () => {
                       className="col-12 col-md-6 col-lg-4 img-contant"
                     >
                       <div className="view">
-                        <a className="btn" href={e.href}>
-                          View
-                        </a>
+                        <h3 className="text-center mt-3">{e.name}</h3>
+
+                        <h6 className="text-center mt-3">{e.tech}</h6>
+
+                        <div className="text-center mt-3">
+                          <a className="btn" href={e.href}>
+                            View
+                          </a>
+                        </div>
                       </div>
                       <img className="imge" src={e.img} alt={e.name} />
                     </div>
@@ -265,9 +278,15 @@ const Projects = () => {
                       className="col-12 col-md-6 col-lg-4 img-contant"
                     >
                       <div className="view">
-                        <a className="btn" href={e.href}>
-                          View
-                        </a>
+                        <h3 className="text-center mt-3">{e.name}</h3>
+
+                        <h6 className="text-center mt-3">{e.tech}</h6>
+
+                        <div className="text-center mt-3">
+                          <a className="btn" href={e.href}>
+                            View
+                          </a>
+                        </div>
                       </div>
                       <img className="imge" src={e.img} alt={e.name} />
                     </div>
@@ -291,9 +310,15 @@ const Projects = () => {
                       className="col-12 col-md-6 col-lg-4 img-contant"
                     >
                       <div className="view">
-                        <a className="btn" href={e.href}>
-                          View
-                        </a>
+                        <h3 className="text-center mt-3">{e.name}</h3>
+
+                        <h6 className="text-center mt-3">{e.tech}</h6>
+
+                        <div className="text-center mt-3">
+                          <a className="btn" href={e.href}>
+                            View
+                          </a>
+                        </div>
                       </div>
                       <img className="imge" src={e.img} alt={e.name} />
                     </div>

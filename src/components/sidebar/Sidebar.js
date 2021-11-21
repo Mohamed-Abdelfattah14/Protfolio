@@ -26,8 +26,8 @@ const Sidebar = () => {
               <NavLink to="experience" className="link">
                 Experience
               </NavLink>
-              <NavLink to="works" className="link">
-                Works
+              <NavLink to="projects" className="link">
+                Projects
               </NavLink>
               <NavLink to="contact" className="link">
                 Contacts

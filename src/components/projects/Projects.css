@@ -51,6 +51,7 @@
     left: 0%;
     transition: all .7s;
     box-sizing: border-box;
+    padding-top: 10px !important;
 }
 .main-projects .img-contant:hover .view{
     opacity: 1;

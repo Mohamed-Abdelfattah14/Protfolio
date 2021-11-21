@@ -22,7 +22,7 @@ const Navbar = () => {
             </div>
             <ul className="nav-menu">
               <li className="navItem" data-aos="fade-down" data-aos-delay="100">
-                <NavLink to="/" className="link" exact>
+                <NavLink to="/Protfolio/" className="link" exact>
                   Home
                 </NavLink>
               </li>

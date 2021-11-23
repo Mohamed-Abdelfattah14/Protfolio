@@ -31,9 +31,6 @@ const Sidebar = () => {
               <NavLink to="projects" className="link">
                 Projects
               </NavLink>
-              <NavLink to="contact" className="link">
-                Contacts
-              </NavLink>
             </li> 
           </ul>
         

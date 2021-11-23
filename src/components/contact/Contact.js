@@ -3,18 +3,25 @@ import "./Contact.css";
 import emailjs from "emailjs-com";
 import { FiSend } from "react-icons/fi";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const Contact = () => {
   const initialValues = { name: "", subject: "", email: "", message: "" };
   const [formValue, setFormValue] = useState(initialValues);
   const [formError, setFormError] = useState({});
   const [isSubmit, setIsSubmit] = useState(false);
+  const [isValid, setIsValid] = useState(false);
 
   const formRef = useRef();
 
   const handlSubmit = (e) => {
     e.preventDefault();
     setFormError(validate(formValue));
-    setIsSubmit(true);
+    if (!formError) {
+      setIsValid(false);
+      setIsSubmit(true);
+    }
 
     emailjs
       .sendForm(
@@ -40,6 +47,18 @@ const Contact = () => {
     }
   }, [formError, isSubmit]);
 
+  const notify = () => {
+    toast.info("Email send , Thanks", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+  };
   const handlChange = (e) => {
     const { name, value } = e.target;
     setFormValue({ ...formValue, [name]: value });
@@ -62,6 +81,7 @@ const Contact = () => {
     if (!values.message) {
       errors.textarea = "Textarea is required";
     }
+
     return errors;
   };
   return (
@@ -69,6 +89,9 @@ const Contact = () => {
       <div id="contact" className="main-contact">
         <div className="container">
           <h1 className="text-center head-contact pt-5">Contact Me</h1>
+          <h6 className="text-center pb-3 pt-1">
+            Send your message , I will contact with you
+          </h6>
           <div className="contact-card">
             <form ref={formRef} onSubmit={handlSubmit}>
               <div className="row">
@@ -115,9 +138,14 @@ const Contact = () => {
                   <p>{formError.textarea}</p>
                 </div>
               </div>
-              <button className="btn mt-4 mb-4">
+              <button
+                className="btn mt-4 mb-4"
+                disabled={isValid}
+                onClick={notify}
+              >
                 <FiSend className="icon-send" /> send
               </button>
+              <ToastContainer />
             </form>
           </div>
         </div>

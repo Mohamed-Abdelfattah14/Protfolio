@@ -1,14 +1,14 @@
 import React from "react";
 import "./About.css";
-import cv from "../../cv.pdf";
+import cv from "../../Mohamed-Abdelfattah.pdf";
 import {
   FaFacebookSquare,
-  FaTwitterSquare,
   FaGithubSquare,
   FaWhatsappSquare,
 } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 import { BsLinkedin } from "react-icons/bs";
-import { ImYahoo2 } from "react-icons/im";
+// import { ImYahoo2 } from "react-icons/im";
 import Skills from "../skills/Skills";
 const About = () => {
   return (
@@ -16,8 +16,9 @@ const About = () => {
       <div className="main-about">
         <div className="container">
           <h1 className="text-center head-about pt-5">About Me</h1>
-          <div className="row mt-5 pb-5">
-            <h3 className="about-h3">I am Mohamed Abd Elfattah</h3>
+          <h3 className="about-h3 mt-3">I am Mohamed Abd Elfattah</h3>
+
+          <div className="row mt-2 pb-5">
             <div className="col-12 col-lg-6">
               <div className="about-info" data-aos="fade-right">
                 <p className="about-p">
@@ -30,36 +31,54 @@ const About = () => {
               </div>
             </div>
             <div className="col-12 col-lg-6">
+            {/* <h3 className="about-h3">Click Name</h3> */}
+
               <div className="about-social" data-aos="fade-left">
                 <div>
                   <FaFacebookSquare className="face" />
-                  <span>hamom311@yahoo.com</span>
+                  <span>
+                    <a href="https://www.facebook.com/mohamed.hamo.37604">
+                      Mohammed Abdelfattah
+                    </a>
+                  </span>
                 </div>
                 <div>
                   <FaWhatsappSquare className="whats" />
                   <span>01012762282</span>
                 </div>
-                <div>
+                {/* <div>
                   <FaTwitterSquare className="twitter" />
                   <span>@Mohamed73148764</span>
-                </div>
+                </div> */}
                 <div>
                   <BsLinkedin className="linkedin" />
-                  <span>Mohamed abdElfattah</span>
+                  <span>
+                    <a href="https://www.linkedin.com/in/mohamed-abdelfattah10/">
+                      Mohamed Abdelfattah
+                    </a>
+                  </span>
                 </div>
                 <div>
-                  <ImYahoo2 className="yahoo" />
-                  <span>mohamed.abdelfattah6897@gmail.com</span>
+                  <SiGmail className="gmail" />
+                  <span>
+                    <a href="https://mail.google.com/mail/u/3/#inbox">
+                      Mohamed Abdelfattah
+                    </a>
+                  </span>
                 </div>
                 <div>
                   <FaGithubSquare className="git" />
-                  <span>Mohamed-Abdelfattah14</span>
+                  <span>
+                    <a href="https://github.com/Mohamed-Abdelfattah14">
+                      Mohamed Abdelfattah
+                    </a>
+                  </span>
                 </div>
               </div>
             </div>
           </div>
           <div className="text-center pb-5 cv" data-aos="fade-up">
-            <a className="btn" href={cv} download="Muhammed Abdelfattah.pdf">
+            <a className="btn" href={cv} download="Mohamed-Abdelfattah.pdf">
               Download CV
             </a>
           </div>

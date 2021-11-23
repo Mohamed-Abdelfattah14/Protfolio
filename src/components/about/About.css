@@ -32,7 +32,10 @@
     margin-left: 10px;
     font-weight: bold;
 }
-
+.main-about .about-social span a{
+    text-decoration: none;
+    color: white;
+}
 .main-about .about-social div{
     margin-bottom: 6px;
 }
@@ -43,6 +46,7 @@
     color: #4267B2;
     transition: 1s ease-in-out;
 }
+
 .main-about .about-social .whats{
     font-size: 1.2rem;
 }
@@ -50,13 +54,7 @@
     color: #128C7E;
     transition: 1s ease-in-out;
 }
-.main-about .about-social .twitter{
-    font-size: 1.2rem;
-}
-.main-about .about-social .twitter:hover{
-    color: #1DA1F2;
-    transition: 1s ease-in-out;
-}
+
 .main-about .about-social .linkedin{
     font-size: 1.2rem;
 }
@@ -64,11 +62,11 @@
     color: #2867B2;
     transition: 1s ease-in-out;
 }
-.main-about .about-social .yahoo{
+.main-about .about-social .gmail{
     font-size: 1.2rem;
 }
-.main-about .about-social .yahoo:hover{
-    color: #4A00A0;
+.main-about .about-social .gmail:hover{
+    color: red;
     transition: 1s ease-in-out;
 }
 .main-about .about-social .git{
